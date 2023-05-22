@@ -1,13 +1,24 @@
 import React from 'react';
+import { useState } from 'react';
+import ReactMarkdown from 'react-markdown';
 import './App.css';
-import Editor from './componentes/editor';
-import Preview from './componentes/preview';
 
 function App() {
+
+  const [input, setInput] = useState();
+
   return (
-   <div>
-      <Editor />
-      <Preview />
+   <div className="App">
+        <label className="label">
+            <textarea 
+                id="editor"
+                className="textarea"
+                value={input}
+                onChange={(event)=> setInput(event.target.value)}
+                autoFocus
+                 />
+        </label>
+        <ReactMarkdown className="markdown" >{input}</ReactMarkdown>
    </div>
   );
 }
