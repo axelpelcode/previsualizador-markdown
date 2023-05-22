@@ -7,7 +7,9 @@ import './App.css';
 
 function App() {
 
-  const [input, setInput] = useState();
+  const textDefault = "# Markdown previewer \r## -Code repository: \r### [Github](https://github.com/axelpelcode/previsualizador-markdown)"
+
+  const [input, setInput] = useState(textDefault);
 
   const Component = ({children}) => {
     return (
@@ -28,11 +30,13 @@ function App() {
                 autoFocus
                  />
         </label>
+      <div id="preview">
         <ReactMarkdown 
         className="markdown"
         children={input}
         components={{code: Component,}} 
         >{input}</ReactMarkdown>
+      </div>
    </div>
   );
 };

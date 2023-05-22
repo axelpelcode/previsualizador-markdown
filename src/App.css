@@ -19,7 +19,7 @@
   outline: none;
   background-color: rgb(222, 220, 220);
 }
-.markdown{
+#preview{
   width: 50%;
   height: 93.7vh;
   padding: 20px;
