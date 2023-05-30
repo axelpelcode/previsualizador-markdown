@@ -19,7 +19,7 @@ function App() {
         entradaCambio={( event )=> setInput( event.target.value )}
       />
       <Preview 
-        contenido={ input }
+        content={ input }
       />
     </div>
   );

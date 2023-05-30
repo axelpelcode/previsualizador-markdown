@@ -1,21 +1,25 @@
 import React from 'react';
-import ReactMarkdown from 'react-markdown';
-import remarkGfm from 'remark-gfm';
-import Resaltar from './Resaltador';
-// import Remgith from 'remark-github-beta-blockquote-admonitions';
+import Prism from 'prismjs';
+import { marked, Renderer } from 'marked';
 
-  const Preview = ({ contenido }) => {
-    return (
-      <div id="preview">
-        <ReactMarkdown 
-          className= "markdown"
-          children= { contenido }
-          components= {{ code: Resaltar }}
-          remarkPlugins= {[  remarkGfm, ]}
-          content={ contenido } 
-        />
-      </div>
-    )
-  }; 
+marked.setOptions({
+    breaks: true,
+    highlight: function (code) {
+      return Prism.highlight(code, Prism.languages.javascript, 'javascript');
+    }
+  });
+  
+  const renderer = new Renderer();
+  renderer.link = function (href, title, text) {
+    return `<a target="_blank" href="${href}">${text}</a>`;
+  };
+  
+  const Preview = ({content}) => (
+    <div id="preview" 
+      dangerouslySetInnerHTML={{
+        __html: marked(content, { renderer: renderer })
+      }}
+    />
+  );
 
   export default Preview;

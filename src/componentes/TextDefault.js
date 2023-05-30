@@ -1,5 +1,5 @@
-const textDefault = `
-# ¡Bienvenido a React Markdown Previewer!
+const textDefault = 
+`# ¡Bienvenido a React Markdown Previewer!
 por [Axelpelcode](https://github.com/axelpelcode)
 ## Este es un subtítulo...
 ### Y aquí hay otras cosas geniales:
@@ -9,9 +9,9 @@ Aquí hay algo de código, \`<div></div>\`, entre 2 acentos graves.
 \`\`\`
 // este es un código de varias líneas:
 
-función otro ejemplo (primera línea, última línea) {
+function otroEjemplo (primera línea, última línea) {
   if (primeraLínea == '\`\`\`' && últimaLínea == '\`\`\`') {
-    devuelve multiLineCode;
+    return multiLineCode;
   }
 }
 \`\`\`
