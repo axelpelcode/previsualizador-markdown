@@ -6,7 +6,7 @@ por [Axelpelcode](https://github.com/axelpelcode)
 
 Aquí hay algo de código, \`<div></div>\`, entre 2 acentos graves.
 
-\`\`\`
+\`\`\`js
 // este es un código de varias líneas:
 
 function otroEjemplo (primera línea, última línea) {

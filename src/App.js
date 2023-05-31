@@ -11,8 +11,8 @@ function App() {
 
   return (
     <div className= "Main">
-      <h2 className= "editorTitle" >Editor</h2>
-      <h2 className= "previewTitle" >Markdown previewer</h2>
+      {/* <h2 className= "editorTitle" >Editor</h2> */}
+      {/*<h2 className= "previewTitle" >Markdown previewer</h2> */}
 
       <Editor 
         entrada={ input }
@@ -24,7 +24,5 @@ function App() {
     </div>
   );
 };
-
-// dangerouwlySetInnerHTML={{ _html: marked(input, { Component: Component }) }}
 
 export default App;
