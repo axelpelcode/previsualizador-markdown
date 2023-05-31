@@ -23,7 +23,8 @@ const renderer = new Renderer();
     };
 
 const Preview = ({content}) => (
-  <div id="preview"
+  <div 
+    id="preview"
     dangerouslySetInnerHTML={{
         __html: marked(content, { renderer: renderer, })
     }}

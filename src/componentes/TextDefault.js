@@ -9,8 +9,8 @@ Aquí hay algo de código, \`<div></div>\`, entre 2 acentos graves.
 \`\`\`js
 // este es un código de varias líneas:
 
-function otroEjemplo (primera línea, última línea) {
-  if (primeraLínea == '\`\`\`' && últimaLínea == '\`\`\`') {
+function otroEjemplo (primeraLínea, últimaLínea) {
+  if (primeraLínea == '\`\`\`lenguaje' && últimaLínea == '\`\`\`') {
     return multiLineCode;
   }
 }
@@ -39,8 +39,8 @@ Y aquí. | Bueno. | Creo que lo conseguimos.
 
 1. Y también hay listas numeradas.
 1. ¡Usa solo 1s si quieres!
-1. And last but not least, let's not forget embedded images:
+1. Y por último, pero no menos importante, no olvidemos las imágenes incrustadas:
 
-![freeCodeCamp Logo](https://cdn.freecodecamp.org/testable-projects-fcc/images/fcc_secondary.svg)`;
+![axelpelcodeImg](https://avatars.githubusercontent.com/u/118192682?v=4)`;
 
     export default textDefault;

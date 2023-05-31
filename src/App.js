@@ -11,16 +11,17 @@ function App() {
 
   return (
     <div className= "Main">
-      {/* <h2 className= "editorTitle" >Editor</h2> */}
-      {/*<h2 className= "previewTitle" >Markdown previewer</h2> */}
-
+      <h2 className="titleEditor">Editor markdown</h2>
       <Editor 
         entrada={ input }
         entradaCambio={( event )=> setInput( event.target.value )}
       />
-      <Preview 
-        content={ input }
-      />
+      <h2 className="titlePreview">Preview</h2>
+      <div className="preview-contenedor">
+        <Preview 
+          content={ input }
+        />
+      </div>
     </div>
   );
 };
